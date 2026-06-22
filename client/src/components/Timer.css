@@ -1,0 +1,53 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timer-display {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #667eea;
+  transition: all 0.3s ease;
+}
+
+.timer-display.warning {
+  color: #ed8936;
+  animation: pulse 1s infinite;
+}
+
+.timer-display.critical {
+  color: #f56565;
+  animation: pulse 0.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.timer-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.timer-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s linear;
+}
+
+.timer-progress.warning {
+  background: linear-gradient(90deg, #ed8936, #f6ad55);
+}
+
+.timer-progress.critical {
+  background: linear-gradient(90deg, #f56565, #fc8181);
+}

@@ -1,0 +1,43 @@
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leaderboard-entry {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: #f7fafc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.rank {
+  font-weight: 700;
+  color: #667eea;
+  min-width: 30px;
+}
+
+.name {
+  flex: 1;
+  color: #2d3748;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.score {
+  font-weight: 600;
+  color: #48bb78;
+  min-width: 40px;
+  text-align: right;
+}
+
+.empty {
+  text-align: center;
+  color: #a0aec0;
+  font-size: 12px;
+  padding: 16px 0;
+}

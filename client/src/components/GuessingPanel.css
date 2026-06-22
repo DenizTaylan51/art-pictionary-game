@@ -1,0 +1,65 @@
+.guessing-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.guessing-panel h3 {
+  margin: 0 0 16px 0;
+  color: #2d3748;
+}
+
+.guessing-panel form {
+  margin-bottom: 16px;
+}
+
+.guessing-panel .form-group {
+  display: flex;
+  gap: 8px;
+}
+
+.guessing-panel input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.guessing-panel input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.guessing-panel button {
+  padding: 10px 20px;
+}
+
+.hint {
+  margin: 0;
+  font-size: 12px;
+  color: #718096;
+}
+
+.drawer-waiting {
+  text-align: center;
+  padding: 24px 0;
+}
+
+.drawer-waiting h3 {
+  font-size: 20px;
+  color: #667eea;
+  margin: 0 0 12px 0;
+}
+
+.drawer-waiting p {
+  margin: 4px 0;
+  color: #2d3748;
+}
+
+.drawer-waiting .artist {
+  font-size: 12px;
+  color: #a0aec0;
+}
